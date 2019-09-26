@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The mokeeOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common mokee stuff
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit from nx611j device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := nubia
 PRODUCT_DEVICE := nx611j
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_NAME := lineage_nx611j
+PRODUCT_NAME := mk_nx611j
 PRODUCT_MODEL := NX611J
 
 PRODUCT_GMS_CLIENTID_BASE := android-nubia

@@ -274,7 +274,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-sdm
+    vendor.mokee.livedisplay@1.0-service-sdm
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -296,6 +296,11 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
+# twrp
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/busybox/busybox:system/xbin/busybox
+	
+					  
 # Media Extensions
 PRODUCT_PACKAGES += \
     libavmediaserviceextensions \
@@ -447,7 +452,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-02-05
+    ro.mokee.build.vendor_security_patch=2018-02-05
 
 # Verity
 $(call inherit-product, build/target/product/verity.mk)
