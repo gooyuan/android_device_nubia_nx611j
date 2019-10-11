@@ -8,3 +8,12 @@ persist.camera.depth.focus.cb=0
 
 #ZTEMT audio offload disable
 audio.offload.disable=1
+
+#Set composition for USB device
+#persist.sys.usb.config=diag,serial_smd,rmnet_bam,adb
+persist.sys.usb.config=diag,serial_smd,rmnet_bam,mass_storage,adb
+#For frameworks compatible process between BCM & NXP — xiaoshengtao
+ro.config.nfc_chip_model=BCM
+#Set read only default composition for USB
+#ro.sys.usb.default.config=diag,serial_smd,rmnet_bam,adb
+ro.sys.usb.default.config=diag,serial_smd,rmnet_bam,mass_storage,adb
