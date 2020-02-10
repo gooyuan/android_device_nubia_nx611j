@@ -17,3 +17,5 @@ ro.config.nfc_chip_model=BCM
 #Set read only default composition for USB
 #ro.sys.usb.default.config=diag,serial_smd,rmnet_bam,adb
 ro.sys.usb.default.config=diag,serial_smd,rmnet_bam,mass_storage,adb
+
+ro.config.vc_call_vol_steps=11
